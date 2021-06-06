@@ -1,0 +1,143 @@
+body{
+	margin 0;
+}
+* {
+	box-sizing: border-box;
+}
+.second-nav-link{
+	text-decoration: none;
+	margin-right: 25px;
+}
+.second-nav-fixed{
+	position: fixed;
+	z-index: 5;
+	top: 110px;
+	left: 0;
+	justify-content: flex-start;
+	background-color: rgba(255, 255, 255, 0.863);
+}
+@keyframes showMenu1{
+	0%{
+	opacity: 0;
+	top: -100px;
+	}
+	100%{
+		opacity: 1;
+		top:0;
+	}
+}
+
+.second-nav-ul > li{
+list-style:none;
+cursor : pointer;
+}
+
+.second-nav-ul{
+	display: flex;
+	font-size: 25px;
+	margin: 10px 0 10px 0;
+	font-family: 'Marmelad', sans-serif;
+}
+.second-nav{
+	display: flex;
+justify-content: center;
+}
+@media (max-width: 805px){
+	.second-nav-ul{
+		font-size: 20px;
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 680px) {
+	.second-nav-fixed  .second-nav-ul{width: 40px;}
+	.second-nav-fixed  .second-nav-ul> li{
+		height: 36px;
+	}
+
+	.second-nav-fixed .second-nav-ul{
+		flex-direction: column;
+		padding: 5px;
+	}
+	.second-nav-fixed .second-nav-link__impression{
+		background:  url(/src/img/wow-50.png) no-repeat 0 4px ;
+		background-size: 30px;
+	}
+	.second-nav-fixed .second-nav-link__text{
+	padding-left: 40px;
+	display: none;
+	}
+	.second-nav-fixed	.second-nav-link__included, 	.second-nav-fixed	 .second-nav-link__program,.second-nav-fixed	 .second-nav-link__map{  
+		background:  url(/src/img/wow-50.png) no-repeat 0 4px ;
+		background-size: 30px;
+	}
+}
+
+
+
+
+.photoblocks__container{
+	display: flex;
+	flex-wrap:wrap;
+	/* width: 100vw; */
+	min-height: 110vh;
+	max-height: 100%;
+	justify-content: center;
+	flex-basis:auto;
+	/* white-space: pre-wrap;	 */
+}
+
+.photoblocks__body{
+	width: 500px;
+	width:100%;
+	min-width: 400px;
+	perspective: 10000px;
+}
+
+.photoblock__container{
+width: 500px;
+height: 100%;
+align-self:flex-start;
+align-items:center
+}
+
+.photoblock__body{
+width: 480px;
+height: 350px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+perspective: 10000px;
+transform-style: preserve-3d;
+}
+.photoblocks__body-item-img	{
+	width: 100%;
+	min-width: 400px;
+	margin: 0 auto auto;
+	height: 100%;
+	min-height: 350px;
+	-webkit-background-size: cover;
+	-moz-background-size:  cover;
+	-o-background-size: cover;
+	background-size: cover;
+	transition: transform 0.2s;
+}
+.photoblocks__body-item-img.photo1 {
+	background-image: url(/src/img/forma.jpg);
+}
+.photoblocks__body-item-img.photo2 {
+	background-image: url(/src/img/pec.jpg);
+}
+.photoblocks__body-item-img.photo3 {
+	background-image: url(/src/img/pec.jpg);
+}
+.photoblocks__body-item-img.photo4 {
+	background-image: url(/src/img/pec.jpg);
+}
+.photoblocks__body-item-img.photo5 {
+	background-image: url(/src/img/pec.jpg);
+}
+.photoblocks__body-item-img.photo6 {
+	background-image: url(/src/img/pec.jpg);
+}
+
+

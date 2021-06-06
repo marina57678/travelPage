@@ -1,0 +1,288 @@
+._pc, ._touch {
+	margin: 0;
+}
+._lock{
+	overflow: hidden;
+}
+.header { 
+	position:absolute;
+	width: 100%;
+	z-index: 50;	
+	background-color:  rgba(60, 9, 90, 0.795);
+}
+.header__container{
+	max-width: 1500px;
+	height: 100px;
+	margin: 0 auto;
+}
+.head-fixed{
+	display: block;
+	width: 100%;
+	position: fixed;
+	top:0;
+	animation-name: showHead1;
+	animation-duration: 0.5s;
+}
+@keyframes showHead1{
+	0%{
+		opacity: 0;
+		top: -100px;
+	}
+	100%{
+		opacity: 1;
+		top:0;
+	}
+}
+
+.menu_body{
+	display: flex;
+	justify-content:space-between;
+}
+.menu-burger{
+	display: none;
+	visibility: hidden;
+}
+.head-nav-link{
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+.head-nav-link:hover{
+	text-decoration:underline;
+}
+.head-nav-list__first{
+	display: flex;
+	padding: 0;
+	align-items:flex-end;
+}
+.head-nav-ul li {
+   list-style:none;
+}
+
+.menu-burger{
+	z-index: 7;
+}
+	/* делаем флекс меню ( главная туры и тд */
+	.head-nav-ul {
+		display: flex;
+		padding: 0;
+		align-items:flex-end;
+		margin: 0;
+	}
+	.head-nav-ul > li{
+		margin-left: 30px;
+	}
+	
+	
+	/*  работаем над стилем текста меню */
+.head-nav-link {
+	font-size: 25px;
+	font-family: 'Marmelad', sans-serif;
+	font-weight:500;
+	color: whitesmoke;
+	letter-spacing: 0.1em;
+}
+/* сделаем в строчку поиск и иконки  */
+.secondpartnav {
+	display: flex;
+	padding: 0;
+}
+.firstpartnav{
+	display: flex;
+}
+	/* сделаю что б все основные ивы были флекс элементами,
+	получилось ,что поиск и иконки под низом,значит нужно 
+	 еще тому под диву задать флекс */
+	
+	.head-nav-list__second{
+		display: flex;
+		align-items:flex-end;
+	}
+	/* нужные мне элеенты стали флекс элементами , 
+	теперь мозжно разместить их тк надо */
+	.head-burger{
+		display: flex;
+	}
+	.search {
+	height: 20px;	
+	}
+	.head-nav-icon{ 
+		margin-left: 10px;
+	}
+
+@media (max-width: 1099px){
+	.header{
+		background-color: none;
+	}
+	.menu-burger{
+	visibility: visible;
+	}
+	.menu_body{
+		z-index: 2;
+		position:fixed;
+		display: flex;
+		flex-direction: column;	
+		width: 100%;
+		height: 100vh;
+		justify-content:start;
+		background-color: rgba(0, 0, 0, 0.9);
+		overflow-y: auto;
+		left:-100%;
+		transition: all 0.3s ease 0s;
+	}
+	._active{
+		left:0;
+	}
+	.head-nav-logo{
+		display: none;
+		visibility: hidden;
+	}
+	.head-nav-list__first::before{
+		position: fixed;
+		content: "";
+		width: 100%;
+		top: 0%;
+		left: 0;
+		height: 100px;
+		background-color:rgba(60, 9, 90, 0.795);
+	}
+	.firstpartnav{
+		display: flex;
+		flex-direction: column;
+		margin-left: 5%;
+		
+	}
+	.head-nav-list__first{
+		margin-top: 5%;
+		
+	}
+	.head-nav-ul >li {
+		margin-top: 20px;
+	}
+	.head-nav-link {
+		font-size: 35px;
+	}
+	.header__container{
+		width: 90%;
+	}
+	.menu-burger{
+		position: fixed;
+		align-items:center;
+		width: 90%;
+		display: flex;
+		justify-content:space-between;
+	}
+	.head-nav-list__first{
+		margin-top: 100px;
+	}
+	.head-nav-ul {	
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	font-size: 35px;
+	}
+	
+	.head-nav-link {
+		color: whitesmoke;
+		margin-top: 30px;
+	}
+	.head-nav-list__second{
+		margin-top: 20px;
+		margin-left:7.5%;
+		flex-direction: column;
+	}
+	
+	.nav-icon{
+		margin-top: 30px;	
+	}
+	.head-nav-icon{
+		margin-left: 15px;
+	}
+	.head-nav-icon:first-child{
+		margin-left: 0%;
+	}
+	.head-burger{
+		display: block;
+		position: relative;
+		width: 35px;
+		height: 23.5px;
+		cursor: pointer;
+	}
+	
+	.head-burger span,
+	.head-burger::before,
+	.head-burger::after{
+		width: 100%;
+		left: 0;
+		position: absolute;
+		height: 10%;
+		background-color: whitesmoke;
+		transition: all 0.6s ease 0s;
+	}
+
+	.head-burger::before,
+	.head-burger::after{
+		content: "";
+	}
+	.head-burger::after{
+		bottom: 0;
+	}
+	.head-burger::before{
+		top: 0;
+	}
+	.head-burger span{
+		top:50%;
+		transform:scale(1) translate(0px, -50%) ;
+	}
+	
+	._pc .head-burger:hover::before,
+	._pc .head-burger:hover::after{
+		transform:scale(1) translate(-5px, 0%) ;
+	}
+	._pc .head-burger:hover span{
+		transform:scale(1) translate(5px, 0%) ;
+	}
+	.burger_active::before {
+		transform:scale(1) translateY(10px) rotate(45deg);
+	}
+	.burger_active::after {
+		transform:scale(1) translateY(-10px) rotate(-45deg);
+	}
+	
+	.burger_active span {
+		display: none;
+	}
+	
+	._pc .burger_active:hover::after{
+		transform: scale(1.1) translateY(-10px) rotate(-45deg);
+	}
+	._pc .burger_active:hover::before{
+		transform: scale(1.1) translateY(10px) rotate(45deg);
+	}
+	._pc .burger_active:hover span{
+		transform:scale(1) translate(5px, 0%) ;
+	}
+}
+@media (max-width: 1600px) {
+	.header__container{
+		max-width: 1300px;
+	}
+
+}
+@media (max-width: 1440px) {
+	.header__container{
+		max-width: 1200px;
+	}
+}
+@media (max-width: 1250px) and (min-width:1100px) {
+	.header__container{
+		max-width: 1100px;
+		justify-content: safe;
+	}
+.head-nav-ul > li:first-child{
+		margin-left: 0px;
+	}
+	.head-nav-link {
+	
+		letter-spacing: 0;
+	}
+}

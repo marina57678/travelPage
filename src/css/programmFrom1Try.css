@@ -1,0 +1,71 @@
+
+.artist-cards__container{
+	display: flex;
+		flex-wrap:wrap;
+		/* width: 100vw; */
+		min-height: 110vh;
+		max-height: 100%;
+		justify-content: space-around;
+		flex-basis:auto;
+	}
+	.artist-card__container{
+		width: 96%;
+	}
+	.artist-cards__body-item-text{
+		width: 40%;
+	}
+	.artist-cards__body-item-img{
+		width: 55%;
+	margin: 0 auto auto;
+
+	}
+	.dayphoto{
+		width: 100%;
+	
+	}
+	.artist-card__body{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		text-align: center;
+		
+	}
+	.artist-cards__body-item-img img{
+	object-fit: cover;
+	
+}
+.artist-cards__body-item-text{
+	font-family: 'Marmelad', sans-serif;
+	font-weight: 500;
+font-size:18px;
+line-height: 35px;
+letter-spacing: 0.07em;
+text-align:start;
+margin: 0px 30px 0px 30px;
+}
+.dayP,.bold1{
+	font-weight: 800;
+	font-size:22px;
+}
+.programm-title{
+	font-weight: 800;
+	font-size:30px;
+	margin-left: 100px;
+}
+.bold{
+	font-weight: 700;
+	font-size:19px;
+}
+@media (max-width:1270px) {
+	.artist-cards__body-item-text{
+		width: 85%;
+	}
+	.artist-cards__body-item-img{
+		width: 85%;
+	margin: 0 auto auto;
+	}
+}
+.second-nav-fixed{
+	top:10;
+}
