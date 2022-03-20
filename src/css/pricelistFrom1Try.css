@@ -40,7 +40,8 @@ color:  darkred;
 }
 .priceright li {
 	list-style: none;
-	background: url(/src/img/money.png) 2px 4px no-repeat;
+	background: url(https://findicons.com/files/icons/2770/ios_7_icons/512/money_bag.png) 2px 4px no-repeat;
+	background-size: 30px;
 	padding-left: 35px;/* Смещаем текст вправо*/  
 }
 .priceright a{

@@ -5,11 +5,6 @@
 <head>
 	<!--служебная инфа-->
 	<meta charset="UTF-8">
-	<!--кадировка страницы-->
-	<meta author="Шиповалова Марина">
-	<!--автор страницы-->
-	<meta descripion="тут написать описание стр">
-	<meta keywords="ключевые слова">
 	<title>НИДЕРЛАНДЫ</title>
 	<!--заголовок стр-->
 	<link rel="stylesheet" href="/src/css/">
@@ -54,7 +49,7 @@
 			<div class="header__container">
 				<div class="menu-burger">
 					<div class="menu-burge-logo">
-						<a data-goto=".head1" href="#header" class="nav-logo"><img class="logo" src="../src/img/logo2.png"
+						<a data-goto=".head1" href="#header" class="nav-logo"><img class="logo" src="../src/img/logo2.svg"
 								alt="logo2"></a>
 					</div>
 					<div class="head-burger">
@@ -64,7 +59,7 @@
 				<div class="menu_body">
 					<div class="firstpartnav">
 						<div class="head-nav-logo">
-							<a data-goto=".head1" href="#header" class="nav-logo"><img class="logo" src="../src/img/logo2.png"
+							<a data-goto=".head1" href="#header" class="nav-logo"><img class="logo" src="../src/img/logo2.svg"
 									alt="logo2"></a>
 						</div>
 						<nav class="head-nav-list__first">
@@ -95,7 +90,7 @@
 										src="https://img.icons8.com/doodle/48/000000/telegram-app.png" alt="telegram-app"></a>
 								<a class="head-nav-icon" href="https://vk.com"><img class="head-nav-icon" alt="vk-messenger"
 										src="https://img.icons8.com/doodle/48/000000/vk-messenger.png"></a>
-								<a class="head-nav-icon" class="head-nav-icon" href="#form"><img class="head-nav-icon"
+								<a class="head-nav-icon" href="#form"><img class="head-nav-icon"
 										src="https://img.icons8.com/doodle/48/000000/whatsapp.png" alt="phone"></a>
 							</div>
 						</nav>
@@ -115,8 +110,9 @@
 							<h2>22 места в группе</h2>
 						</div>
 						<div>
-							<button type="sumbit" class="full-screen__button"> <span> <a class="full-screen__button__text"
-										data-goto=".header" href="#header" class=""> Купить программу </a></span> </button>
+							<button class="full-screen__button">
+									<span class="full-screen__button__text">Купить программу </span>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -132,8 +128,8 @@
 								class="formBuy__input _req">
 						</div>
 						<div class="formBuy__item">
-							<label class="formBuy__label" for="">Телефон*</label>
-							<input id="formBuyName" type="tel" placeholder="Номер телефона" name="name"
+							<label class="formBuy__label" for="formBuyPhone">Телефон*</label>
+							<input id="formBuyPhone" type="tel" placeholder="Номер телефона" name="name"
 								class="formBuy__input _req">
 						</div>
 						<div class="formBuy__item">
@@ -143,7 +139,7 @@
 						</div>
 						<div class="formBuy__item">
 							<label class="formBuy__label _req" for="formBuyСountry">Страна*</label>
-							<select class="formBuy__select" name="country">
+							<select  id="formBuyСountry" class="formBuy__select" name="country">
 								<option value="Netherlands">Нидерланды</option>
 								<option value="Japan">Япония</option>
 								<option value="Peru">Перу</option>
@@ -157,99 +153,53 @@
 							</div>
 						</div>
 						<button type="submit" class="formBuy__button">Отправить</button>
-							</form>
+					</form>
 				</div>
-			
-
 			</div>
-			<video preload="auto" autoplay muted class="full-screen__video">
-				<!-- почему 2? птому что формат webm лучше качество,но не везде подерживается , где не поддерживается,то обычный mp4 -->
+			<!-- <video preload="auto" autoplay muted class="full-screen__video">
 				<source type="video/webm" src="/src/img/full-screen-video.mp4">
 				<source type="video/mp4" src="/src/img/full-screen-video.mp4">
-			</video>
-	
+			</video>	 -->
 	<div>
 		<nav class="second-nav">
 			<ul class="second-nav-ul">
-				<li class="second-nav-link__impression"><a data-goto=".header" href="#photoblocks" class="second-nav-link second-nav-link__impression"><span
-							class="second-nav-link__text">Впечатления </span></a>
+				<li class="second-nav-link__impression">
+					<a data-goto=".header" href="#photoblocks" class="second-nav-link second-nav-link__impression">
+						<span class="second-nav-link__text">Впечатления</span>
+					</a>
 				</li>
-				<li class="second-nav-link__included"><a data-goto=".header" href="#pricelist" class="second-nav-link"><span
-							class="second-nav-link__text">Что
-							включено</span></a></li>
-				<li class="second-nav-link__program"><a data-goto=".header" href="#programm" class="second-nav-link"><span
-							class="second-nav-link__text">Программа</span></a></li>
-				<li class="second-nav-link__map"><a data-goto=".header" href="#map" class="second-nav-link"><span
-							class="second-nav-link__text">Карта
-							маршрута</span></a></li>
+				<li class="second-nav-link__included">
+					<a data-goto=".header" href="#pricelist" class="second-nav-link">
+						<span class="second-nav-link__text">Что включено</span>
+					</a>
+				</li>
+				<li class="second-nav-link__program">
+					<a data-goto=".header" href="#programm" class="second-nav-link">
+						<span class="second-nav-link__text">Программа</span>
+					</a>
+				</li>
+				<li class="second-nav-link__map">
+					<a data-goto=".header" href="#map" class="second-nav-link">
+						<span class="second-nav-link__text">Карта маршрута</span>
+					</a>
+				</li>
 			</ul>
 		</nav>
-
 	</div>
 	<section class="photoblocks" id="photoblocks">
 		<div class="photoblocks__container">
-			<div class="photoblock__container">
-				<div class="photoblock__body">
-					<div class="photoblocks__body-item-img photo1" >		
-					</div>
-				</div>
-			</div> 
-			<div class="photoblock__container">
-				<div class="photoblock__body">
-					<div class="photoblocks__body-item-img photo2">		
-					</div>
-				</div>
-			</div> 
-			<div class="photoblock__container">
-				<div class="photoblock__body">
-					<div class="photoblocks__body-item-img photo3">		
-					</div>
-				</div>
-			</div> 
-			<div class="photoblock__container">
-				<div class="photoblock__body">
-					<div class="photoblocks__body-item-img photo4">		
-					</div>
-				</div>
-				<div class="photoblocks__body-item-text">	
-				</div>
-			</div> 
-			<div class="photoblock__container">
-				<div class="photoblock__body">
-					<div class="photoblocks__body-item-img photo5">		
-					</div>
-				</div>
-				</div>
-			<div class="photoblock__container">
-				<div class="photoblock__body">
-					<div class="photoblocks__body-item-img photo6">		
-					</div>
-				</div>
-			</div>
-			<div class="photoblock__container">
-				<div class="photoblock__body">
-					<div class="photoblocks__body-item-img photo6">		
-					</div>
-				</div>
-			</div>
-			<div class="photoblock__container">
-				<div class="photoblock__body">
-					<div class="photoblocks__body-item-img photo6">		
-					</div>
-				</div>
-			</div>
-			<div class="photoblock__container">
-				<div class="photoblock__body">
-					<div class="photoblocks__body-item-img photo6">		
-					</div>
-				</div>
-			</div>
-	</div>
+			<img src="https://dutchreview.com/wp-content/uploads/amsterdam-street-busy.jpg" alt="photo"  class="photoblock__container">
+			<img src="./img/forProgramm1.jpg" alt="photo"  class="photoblock__container">
+			<img src="https://dutchreview.com/wp-content/uploads/amsterdam-street-busy.jpg" alt="photo"  class="photoblock__container">
+			<img src="./img/forProgramm1.jpg" alt="photo"  class="photoblock__container">
+			<img src="https://dutchreview.com/wp-content/uploads/amsterdam-street-busy.jpg" alt="photo"  class="photoblock__container">
+			<img src="./img/forProgramm1.jpg" alt="photo"  class="photoblock__container">
+		</div>
 	</section>
 	<section class="map">
 		<div id="map" class="preview2">Карта маршрута</div>
-		<!--       <iframe  class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33738.17391207695!2d4.828663013095138!3d52.36646419237927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2z0JDQvNGB0YLQtdGA0LTQsNC8LCDQndC40LTQtdGA0LvQsNC90LTRiw!5e0!3m2!1sru!2sua!4v1616423137774!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
-		<iframe class="googlemap" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" src="https://www.google.com/maps/d/embed?mid=19eP2RsaAK9dyWYpZKeVRaiFtjCw" width="640" height="480"></iframe>
+		<iframe class="googlemap" style="border:0;" allowfullscreen="" loading="lazy" 
+		src="https://www.google.com/maps/d/embed?mid=19eP2RsaAK9dyWYpZKeVRaiFtjCw" width="640" height="480"></iframe>
 	</section>
 	<section class="pricelist" id="pricelist">
 		<div class="priceleft">
@@ -266,8 +216,7 @@
 		</div>
 		<div class="priceright">
 			<p>Дополнительно</p>
-			<div class="nav1">
-				<ul>
+				<ul class="nav1">
 					<li><a target="_blank" class="nav_link1" 
 						href="https://e-bilet.com.ua/ru/AirTickets/History?hid=d2374bfb-b370-42ff-bd26-7a3db2c2cd29">Международный перелет</a>
 					</li>
@@ -281,13 +230,11 @@
 						href="http://www.tripbest.ru/world/europe/netherlands/amsterdam/prices_ams.php">Личные растраты на свободные дни</a>
 					</li>
 				</ul>
-
-			</div>
 		</div>
 </section>
 	</main>
 	<section id="programm">
-		<h1 class="programm-title">Программа путешествия</h1>
+		<h2 class="programm-title">Программа путешествия</h2>
 		<div class="artist-cards__container">
 			<div class="artist-card__container">
 				<div class="artist-card__body">
@@ -303,7 +250,7 @@
 					<p>После такого насыщенного дня будет очень уместно расслабиться в одном из местных баров.</p>
 				</div>
 					<div class="artist-cards__body-item-img">	
-						<img class="dayphoto" src="/src/img/img2.2.png" alt=" Амстердамский Государственный музей">	
+						<img class="dayphoto" src="https://mtdata.ru/u16/photo59FF/20168774893-0/original.jpg" alt=" Амстердамский Государственный музей">	
 					</div>
 				</div>
 				
@@ -344,7 +291,7 @@
 			</div>
 			<div class="artist-card__container">
 				<div class="artist-card__body">
-					<div class="artist-cards__body-item-img">	<img class="dayphoto" src="/src/img/img2.3.png" alt="тюлп поля">	
+					<div class="artist-cards__body-item-img">	<img class="dayphoto" src="https://cs4.pikabu.ru/post_img/big/2014/06/09/8/1402313814_1917567391.jpg" alt="тюлп поля">	
 					</div>
 					<div class="artist-cards__body-item-text">
 						<p class="dayP">5 день</p>
@@ -373,14 +320,14 @@
 						<p class="bold">Рынок MARKTHAL</p>
 						<p>40-метровая арка, украшенная изображениями цветов, ягод и фруктов. </p>
 					</div>
-					<div class="artist-cards__body-item-img"><img class="dayphoto" src="/src/img/img2.5.png" alt="КУБИЧЕСКИЕ ДОМА ПИТА БЛОМА">	
+					<div class="artist-cards__body-item-img"><img class="dayphoto" src="https://tour-pronl.com/wp-content/uploads/2017/10/kubicheskie-doma-rotterdam-3.jpg" alt="КУБИЧЕСКИЕ ДОМА ПИТА БЛОМА">	
 					</div>
 				</div>
 			</div>
 			<div class="artist-card__container">
 				<div class="artist-card__body">
 					<div class="artist-cards__body-item-img">	
-						<img class="dayphoto" src="/src/img/img2.6.png" alt="Мост Эразма">	
+						<img class="dayphoto" src="http://3.bp.blogspot.com/-XvdUxN02vQw/TaqTuCfKZhI/AAAAAAAAAXI/0d_fYDh9aAQ/w1200-h630-p-k-no-nu/erasmusbrug-rotterdam.jpg" alt="Мост Эразма">	
 					</div>
 					<div class="artist-cards__body-item-text">
 						<p class="dayP">7 день</p>

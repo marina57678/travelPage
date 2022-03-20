@@ -23,6 +23,10 @@
 	animation-name: showHead1;
 	animation-duration: 0.5s;
 }
+.logo{
+	width: 140px;
+	height: 75px;
+}
 @keyframes showHead1{
 	0%{
 		opacity: 0;
@@ -108,6 +112,9 @@
 	.head-nav-icon{ 
 		margin-left: 10px;
 	}
+	.nav-icon{
+		padding-top: 10px;
+	}
 
 @media (max-width: 1099px){
 	.header{
@@ -192,7 +199,8 @@
 	}
 	
 	.nav-icon{
-		margin-top: 30px;	
+		margin-top: 30px;
+		margin-left: 10px;
 	}
 	.head-nav-icon{
 		margin-left: 15px;
